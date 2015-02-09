@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>order_mgmt</display-name>
+	
+	<welcome-file-list>
+		
+		<welcome-file>index.jsp</welcome-file>
+		
+	</welcome-file-list>
+	<servlet>
+		<description>
+		</description>
+		<display-name>userAuth</display-name>
+		<servlet-name>userAuth</servlet-name>
+		<servlet-class>
+		authpage.userAuth</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>authPage</display-name>
+		<servlet-name>authPage</servlet-name>
+		<servlet-class>
+		userPage.authPage</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>order</display-name>
+		<servlet-name>order</servlet-name>
+		<servlet-class>
+		authpage.order</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>odetail</display-name>
+		<servlet-name>odetail</servlet-name>
+		<servlet-class>
+		authpage.odetail</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>cancelOrder</display-name>
+		<servlet-name>cancelOrder</servlet-name>
+		<servlet-class>
+		authpage.cancelOrder</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userAuth</servlet-name>
+		<url-pattern>/userAuth</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>authPage</servlet-name>
+		<url-pattern>/authPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>order</servlet-name>
+		<url-pattern>/order</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>odetail</servlet-name>
+		<url-pattern>/odetail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>cancelOrder</servlet-name>
+		<url-pattern>/cancelOrder</url-pattern>
+	</servlet-mapping>
+</web-app>
