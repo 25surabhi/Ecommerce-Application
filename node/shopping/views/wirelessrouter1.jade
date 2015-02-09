@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	head
+	link(rel='stylesheet', href='/stylesheets/styles.css')
+
+	h1= title
+
+	<ul class="vertical_menu">
+	<li><a href="car"> Car </a></li>
+	<li><a href="TV"> TV </a></li>
+	<li><a href="wirelessrouter"> Wireless Routers </a></li>
+	<li><a href="http://localhost:8080/order_mgmt/?prodid=#{wirelessrouter[8]._id}"> Buy Now </a></li>
+	</ul>
+
+	div(id="main_content")
+		<p>Description:  #{wirelessrouter[8].Description}</p> 
+		<p>Price:  #{wirelessrouter[8].Price}</p>
+		<p>Dual Band:  #{wirelessrouter[8].Dualband}</p>
+		<p>Range:  #{wirelessrouter[8].Range}</p>
+		<p>Brand:  #{wirelessrouter[8].Brand}</p>

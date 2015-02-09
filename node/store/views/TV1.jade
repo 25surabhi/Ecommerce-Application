@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+		<p>#{num}</p>
+		<p>#{tv[0].description}</p> 
+		</br>
+		<img src =#{tv[0].imagepath} height=200 width=200></img>		
+		<p>#{tv[0].brand}</p>
+		<p>#{tv[0].isHD}</p>
+		#{tv[0].lenght}
+		#{tv[0].width}
+		

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	head
+	link(rel='stylesheet', href='/stylesheets/styles.css')
+
+	h1= title
+
+	<ul class="vertical_menu">
+	<li><a href="car"> Car </a></li>
+	<li><a href="TV"> TV </a></li>
+	<li><a href="wirelessrouter"> Wireless Routers </a></li>
+	<li><a href="http://localhost:8080/order_mgmt/?prodid=#{tv[3]._id}"> Buy Now </a></li>
+	</ul>
+
+	div(id="main_content")
+		<p>Description:  #{tv[3].Description}</p> 
+		<p>Brand:  #{tv[3].Brand}</p>
+		<p>Quality:  #{tv[3].Quality}</p>
+		<p>Length:  #{tv[3].Length}</p>
+		<p>Width:  #{tv[3].Width}</p>
+		<p>Height:  #{tv[3].Height}</p>
+		<p>Price:  #{tv[3].Price}</p>
+		<p>Diagonal Length:  #{tv[3].Diagonalength}</p>
+		<p>Warranty:  #{tv[3].Warranty}</p>

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	br
+	each product, i in car
+		<p>#{product.description}</p>
+		</br>
+		<img src =#{product.imagepath} height=200 width=200></img>
+		
+		<p>#{product.Model}</p>
+		<p>#{product.yearofManufacture}</p>
+		<p>#{product.price}</p>
+		
+
